@@ -3,4 +3,19 @@ from django.shortcuts import render
 
 
 def index(request):
-    return HTTPResponse()
+    context = {
+        'title': 'JANC - Главная',
+        'content': 'Django Machine',
+    }
+
+    return render(request, 'main/index.html', context)
+
+
+def about(request):
+    context = {
+        'title': 'JANC - О нас',
+        'content': 'О нас',
+        'text_on_page': 'Blah-blah-blah...'
+    }
+
+    return render(request, 'main/about.html', context)
