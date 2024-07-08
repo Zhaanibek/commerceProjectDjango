@@ -59,7 +59,7 @@
                                 <li><a class="dropdown-item  text-white" href="carts/cart.html">Корзина</a></li>
                                 <li><a class="dropdown-item  text-white" href="users/profile.html">Личный кабинет</a>
                                 </li>
-                                <li><a class="dropdown-item  text-white" href="#">Админ панель</a></li>
+                                <li><a class="dropdown-item  text-white" href={% url "admin:index" %}>Админ панель</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -87,13 +87,9 @@
                         <img class="mx-1" src={% static "deps/icons/user_interface_menu_grid_apps_icon.svg" %} alt="Catalog Icon" width="16" height="16">
                     </button>
                     <ul class="dropdown-menu bg-dark" data-bs-theme="dark">
-                        <li><a class="dropdown-item text-white" href={% url "catalog:index" %}>Все категории</a></li>
-                        <li><a class="dropdown-item text-white" href={% url "catalog:index" %}>Гаджеты</a></li>
-                        <li><a class="dropdown-item text-white" href={% url "catalog:index" %}>Компьютеры</a></li>
-                        <li><a class="dropdown-item text-white" href={% url "catalog:index" %}>Бытовая техника</a></li>
-                        <li><a class="dropdown-item text-white" href={% url "catalog:index" %}>Мебель</a></li>
-                        <li><a class="dropdown-item text-white" href={% url "catalog:index" %}>Здоровье, красота</a></li>
-                        <li><a class="dropdown-item text-white" href={% url "catalog:index" %}>Аптека</a></li>
+                        {% for categories in category %}
+                            <li><a class="dropdown-item text-white" href={% url "catalog:index" %}>{{ categories.name }}</a></li>
+                        {% endfor %}
                     </ul>
                 </div>
                 <!-- Значек корзины, вызывает модальное окно -->

@@ -1,0 +1,100 @@
+[
+  {
+    "model": "goods.product",
+    "pk": 1,
+    "fields": {
+      "name": "Смартфон Apple iPhone 15 Pro Max 256Gb серый",
+      "slug": "smartfon-apple-iphone-15-pro-max-256gb-seryj",
+      "description": "технология NFC: Да\r\nцвет: серый\r\nтип экрана: OLED, Super Retina XDR display\r\nдиагональ: 6.7 дюйм\r\nразмер оперативной памяти: 8 ГБ\r\nпроцессор: 6-ядерный Apple A17 Pro\r\nобъем встроенной памяти: 256.0 ГБ\r\nемкость аккумулятора: 4422.0 мАч",
+      "image": "goods_images/iphoneforShop.jpg",
+      "price": "584990.00",
+      "discount": "0.00",
+      "quantity": 2,
+      "category": 3
+    }
+  },
+  {
+    "model": "goods.product",
+    "pk": 2,
+    "fields": {
+      "name": "Смартфон Samsung Galaxy S24+ 5G 12 ГБ/256 ГБ серый",
+      "slug": "smartfon-samsung-galaxy-s24-5g-12-gb256-gb-seryj",
+      "description": "технология NFC: Да\r\nцвет: серый\r\nтип экрана: Dynamic AMOLED 2X\r\nдиагональ: 6.7 дюйм\r\nразмер оперативной памяти: 12 ГБ\r\nпроцессор: 10-ядерный Exynos 2400\r\nобъем встроенной памяти: 256.0 ГБ\r\nемкость аккумулятора: 4900.0 мАч",
+      "image": "goods_images/SamsungGalaxyS24ForShop.jpeg",
+      "price": "419401.00",
+      "discount": "0.00",
+      "quantity": 1,
+      "category": 3
+    }
+  },
+  {
+    "model": "goods.product",
+    "pk": 3,
+    "fields": {
+      "name": "Вентилятор Азия Бренд Азия FS-45 черный",
+      "slug": "ventilyator-aziya-brend-aziya-fs-45-chernyj",
+      "description": "тип: напольный\r\nмощность: 80.0 Вт\r\nфункция поворота: Да\r\nрегулировка высоты: Да\r\nцвет: черный",
+      "image": "goods_images/VentilyatorAziyaForShop.jpg",
+      "price": "9445.00",
+      "discount": "0.00",
+      "quantity": 5,
+      "category": 5
+    }
+  },
+  {
+    "model": "goods.product",
+    "pk": 4,
+    "fields": {
+      "name": "Ноутбук ASUS Zenbook 15 OLED UM3504DA-MA197 серый",
+      "slug": "noutbuk-asus-zenbook-15-oled-um3504da-ma197-seryj",
+      "description": "диагональ экрана: 15.6 дюйм\r\nпроцессор: AMD Ryzen 5 7535U\r\nвидеокарта: AMD Radeon 660M\r\nразмер оперативной памяти: 16.0 Гб\r\nтип жесткого диска: SSD\r\nобщий объем накопителей: 512.0 Гб",
+      "image": "goods_images/AsusZenbook15ForShop.jpg",
+      "price": "409611.00",
+      "discount": "0.00",
+      "quantity": 1,
+      "category": 9
+    }
+  },
+  {
+    "model": "goods.product",
+    "pk": 5,
+    "fields": {
+      "name": "Гарнитур Мебель Парк Лофт сп. место 160х200 см",
+      "slug": "garnitur-mebel-park-loft-sp-mesto-160h200-sm",
+      "description": "комплектация: зеркало, ,комод, ,тумба прикроватная, ,шкаф, ,кровать, ,стеллаж, ,полка\r\nосновной материал: ЛДСП\r\nматрас в комплекте: Нет\r\nцвет: белый, ,мультиколор\r\nстрана: Казахстан",
+      "image": "",
+      "price": "200000.00",
+      "discount": "0.00",
+      "quantity": 1,
+      "category": 6
+    }
+  },
+  {
+    "model": "goods.product",
+    "pk": 6,
+    "fields": {
+      "name": "ALURIX микротоки M99",
+      "slug": "alurix-mikrotoki-m99",
+      "description": "количество режимов: 7\r\nназначение: антивозрастной уход, ,лифтинг, ,очищение, ,осветление, ,повышение упругости кожи, ,ровный цвет лица, ,улучшение кровоснабжения, ,сужение пор\r\nтип: микротоки\r\nстрана производитель: Китай\r\nцвет: фиолетовый, ,серебряный",
+      "image": "goods_images/ALURIXForShop.jpg",
+      "price": "637000.00",
+      "discount": "0.00",
+      "quantity": 2,
+      "category": 7
+    }
+  },
+  {
+    "model": "goods.product",
+    "pk": 7,
+    "fields": {
+      "name": "21st Century минерал Calcium Magnesium Zinc + D3 90 таблеток",
+      "slug": "21st-century-mineral-calcium-magnesium-zinc-d3-90-tabletok",
+      "description": "назначение: для укрепления костей\r\nдля кого: универсальные\r\nрегистрационный статус: не является лекарственным средством\r\nобласть применения: энергия и бодрость, ,иммунитет и простуда, ,кожа волосы ногти\r\nосновной компонент: витамин D3\r\nстрана производитель: США\r\nколичество штук в упаковке: 90\r\nформа выпуска: таблетки",
+      "image": "",
+      "price": "2790.00",
+      "discount": "0.00",
+      "quantity": 100,
+      "category": 8
+    }
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "model": "goods.category",
+    "pk": 2,
+    "fields": { "name": "Все категории", "slug": "vse-kategorii" }
+  },
+  {
+    "model": "goods.category",
+    "pk": 3,
+    "fields": { "name": "Гаджеты", "slug": "gadzhety" }
+  },
+  {
+    "model": "goods.category",
+    "pk": 5,
+    "fields": { "name": "Бытовая техника", "slug": "bytovaya-tehnika" }
+  },
+  {
+    "model": "goods.category",
+    "pk": 6,
+    "fields": { "name": "Мебель", "slug": "mebel" }
+  },
+  {
+    "model": "goods.category",
+    "pk": 7,
+    "fields": { "name": "Здоровье, красота", "slug": "zdorove-krasota" }
+  },
+  {
+    "model": "goods.category",
+    "pk": 8,
+    "fields": { "name": "Аптека", "slug": "apteka" }
+  },
+  {
+    "model": "goods.category",
+    "pk": 9,
+    "fields": { "name": "Компьютеры", "slug": "kompyutery" }
+  }
+]
