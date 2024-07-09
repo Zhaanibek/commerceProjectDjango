@@ -91,7 +91,7 @@
                     <ul class="dropdown-menu bg-dark" data-bs-theme="dark">
                         {% tag_Categories as category%}
                         {% for categories in category %}
-                            <li><a class="dropdown-item text-white" href={% url "catalog:index" %}>{{ categories.name }}</a></li>
+                            <li><a class="dropdown-item text-white" href={% url "catalog:index" categories.slug %}>{{ categories.name }}</a></li>
                         {% endfor %}
                     </ul>
                 </div>
