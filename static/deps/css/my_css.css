@@ -1,5 +1,5 @@
 body {
-    background-color: #eef2f6;
+    background-color: #ace3e8 !important;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -42,5 +42,3 @@ main {
     border-radius: 15px;
     font-size: 0.7rem;
 }
-
-

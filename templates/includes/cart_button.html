@@ -6,12 +6,12 @@
 <div>
     <button type="button" class="btn btn-dark btn-secondary d-flex" id="modalButton"
         aria-expanded="false">
-        <img class="mx-1" src={% static "deps/icons/shopping_basket_icon.svg" %} alt="Catalog Icon" width="24"
+        <img class="mx-1" src="{% static "deps/icons/shopping_basket_icon.svg" %}" alt="Catalog Icon" width="24"
             height="24">
-        <span id="goods-in-cart-count">{{carts.total_quantity}}</span>
+        <span id="goods-in-cart-count">{{ carts.total_quantity }}</span>
     </button>
 </div>
-
+<!-- Разметка модального окна корзины -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
@@ -24,13 +24,14 @@
                 <h3 class="text-center mb-4">Корзина</h3>
                 <div class="container" id="cart-items-container">
                     <!-- Разметка корзины -->
-                    {% user_carts request as carts %}
-                    {% include "carts/includes/included_cart.html"%}
+                    {% include "carts/includes/included_cart.html" %}
                     <!-- Закончилась разметка корзины -->
                 </div>
-                <a class="btn btn-dark" href="orders/create_order.html">
-                    Оформить заказ
-                </a>
+                {% if carts %}
+                    <a class="btn btn-dark" href="">
+                        Оформить заказ
+                    </a>
+                {% endif %}
             </div>
         </div>
     </div>
