@@ -2,15 +2,21 @@
 {% load static %}
 
 {% block css %}
-    <link rel="stylesheet" href={% static "deps/css/my_footer.css" %}>
+    <link rel="stylesheet" href="{% static 'deps/css/my_footer.css' %}">
 {% endblock css %}
 
 {% block modal_cart %}
-{% include "includes/cart_button.html" %}
+    {% include "includes/cart_button.html" %}
 {% endblock modal_cart %}
 
 {% block content %}
-    <h1 class="mt-5 pt-5"><strong>{{ content }}</strong></h1>
+    <div class="mt-5 pt-5 text-center">
+        <h1><strong>{{ content }}</strong></h1>
+        <div class="currency-info mt-4">
+            <h2>Курс валют:</h2>
+            <p>1 USD = {{ currency_rate }} KZT</p>
+        </div>
+    </div>
 {% endblock content %}
 
 {% block footer %}
