@@ -42,3 +42,20 @@ main {
     border-radius: 15px;
     font-size: 0.7rem;
 }
+
+.card-img-top {
+    width: 100%;
+    height: 310px; 
+    object-fit: contain; /* Сохранение пропорций и заполнение заданной области */
+    border: 1px solid #6563ff;
+}
+
+.card-body {
+    width: 100%;
+    height: 250px; 
+}
+
+.card-title {
+    height: 60px;
+}
+
