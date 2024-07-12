@@ -1,8 +1,5 @@
-from ast import Mod, mod
-from calendar import month
-from tabnanny import verbose
-from unicodedata import category
 from django.db import models
+from django.urls import reverse
 
 
 class Category(models.Model):
@@ -38,6 +35,10 @@ class Product(models.Model):
 
     def __str__(self):
         return f'{self.name} - количество {self.quantity}'
+    
+
+    def get_absolute_url(self):
+        return reverse("catalog:product", kwargs={"product_slug": self.slug})
     
 
     def display_id(self):
